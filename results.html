@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="styles.css">
+    <title>Fortress Manager Mini | Results</title>
+</head>
+<body>
+    <div class=main-title>
+        <h1>Fortress Manager Mini</h1>
+        <p>A minigame about managing a Team Fortress 2 team in an imaginary league.</p>
+    </div>
+
+    <div class="main-container">   
+        <h2>Results</h2>
+        
+        <p class="results-message">You have skipped the day.</p>
+        <p class="results-message-2"></p>
+        <br />
+
+        <button onClick="rollEvent(); calculateNewLeaderboardResults()">Next day ></button>
+    </div>
+    
+    <footer>
+        <a href="https://github.com/elevchyt" target="_blank">github/elevchyt</a>
+    </footer>
+
+    <!-- JS -->
+    <script src="js/database.js"></script>
+    <script src="js/redirect.js"></script>
+    <script src="js/results.js"></script>
+</body>
+</html>

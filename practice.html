@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="styles.css">
+    <title>Fortress Manager Mini | Practice</title>
+</head>
+<body>
+    <div class=main-title>
+        <h1>Fortress Manager Mini</h1>
+        <p>A minigame about managing a Team Fortress 2 team in an imaginary league.</p>
+    </div>
+
+    <div class="main-container">   
+        
+            <h2>Practice</h2>
+
+            <button class="dexterity" onClick=dexterityBuy()>Dexterity</button>
+            <button class="review" onClick=reviewBuy()>Review</button>
+            <button class="coaching" onClick=coachingBuy()>Coaching</button>
+
+            <br />
+
+            <h2>Choose a practice mode</h2>
+            <ul>
+                <li><strong>Dexterity</strong>: Players hone their sense & muscle memory playing a series of practice gamemodes.</li>
+                <li><strong>Review</strong>: The team goes over mistakes done in previous matches and comes up with new tactics.</li>
+                <li><strong>Coaching</strong>: You hire a professional coach to improve your team's approach to future games.</li>
+            </ul>
+
+            <button onClick=redirectToMenu()>< Back</button>
+    </div>
+
+    <footer>
+        <a href="https://github.com/elevchyt" target="_blank">github/elevchyt</a>
+    </footer>
+
+    <!-- JS -->
+    <script src="js/database.js"></script>
+    <script src="js/practice.js"></script>
+    <script src="js/redirect.js"></script>
+</body>
+</html>

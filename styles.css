@@ -1,0 +1,307 @@
+/* CSS PALLETE: 
+        dark: 292F36 
+        white: FFFFFF
+        green: 69995D
+        blue: 4392F1
+        red: DC493A
+        orange: FF9F1C
+*/
+
+* {
+    font-family: monospace, Roboto, sans-serif;
+    cursor: default;
+}
+
+body {
+    background-color: #292F36;
+    color: #FFFFFF;
+}
+
+.main-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    margin-top: 28vh;
+}
+
+footer a {
+    color: #4a555f;
+    text-decoration: none;
+    cursor: default;
+}
+footer a:hover {
+    color: #56626d;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.main-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+    font-size: 16px;
+
+    animation: transitionIn 0.75s;
+}
+
+.main-container h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.main-container h2 {
+    color: #FF9F1C;
+}
+
+.main-container h3 {
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: normal;
+    text-align: right;
+}
+.main-container h3 .team-points {
+    color: #FF9F1C;
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.main-container button {
+    font-size: 24px;
+    width: 160px;
+    height: 40px;
+    margin: 4px;
+    
+    border-style: dotted;
+    border-radius: 8px;    
+    outline: 0;
+
+    transition: 0.2s ease-out;
+}
+.main-container button:hover {
+    width: 180px;
+    height: 42px;
+}
+.main-container button:hover:disabled {
+    cursor: not-allowed;
+}
+
+.main-container input {
+    font-size: 24px;
+    width: 240px;
+    height: 40px;
+    margin: 4px;
+    
+    border-style: dotted;
+    border-radius: 8px;
+
+    text-align: center; 
+
+    transition: 0.2s ease-out;
+}
+.main-container input:hover {
+    width: 260px;   
+    height: 42px;
+}
+
+.main-container .team-details {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.main-container p {
+    margin: 0;
+}
+
+.main-container .budget {
+    color: #69995D;
+}
+
+.main-container .ranking {
+    color: #4392F1;
+}
+.main-container .ranking-bonus {
+    color: #69995D;
+}
+
+.main-container .player-name {
+    font-size: 18px;
+    color: #4392F1;
+    transition: 0.2s ease-out;
+}
+.main-container .player-name:hover {
+    font-size: 20px;
+}
+
+.skill-gain {
+    color: #4392F1;
+}
+
+.skill-loss {
+    color: #DC493A;
+}
+
+.coop-gain {
+    color: #4392F1;
+}
+
+.coop-loss {
+    color: #DC493A;
+}
+
+.main-container .event-button-1 {
+    font-size: 24px;
+    width: 380px;
+    height: 40px;
+    margin: 4px;
+    
+    border-style: dotted;
+    border-radius: 8px;    
+    outline: 0;
+
+    transition: 0.2s ease-out;
+}
+.main-container .event-button-1:hover {
+    width: 400px;
+    height: 42px;
+}
+
+.main-container .event-button-2 {
+    font-size: 24px;
+    width: 380px;
+    height: 40px;
+    margin: 4px;
+    
+    border-style: dotted;
+    border-radius: 8px;    
+    outline: 0;
+
+    transition: 0.2s ease-out;
+}
+.main-container .event-button-2:hover {
+    width: 400px;
+    height: 42px;
+}
+
+.event-description {
+    padding: 0vh 80vh 6vh 80vh;
+}
+
+.results-message-2 {
+    padding: 0vh 80vh 6vh 80vh;
+}
+
+.team-blu {
+    color: #4392F1;
+}
+
+.team-red {
+    color: #DC493A;
+}
+
+.score-blu {
+    color: #FFFFFF;
+}
+
+.score-red {
+    color: #FFFFFF;
+}
+
+.vs {
+    color: #FFFFFF;
+}
+
+.team-scores {
+    margin-top: -2px;
+}
+
+.leaderboard-prize {
+    color: #69995D;
+}
+
+.spinner {
+    width: 4%;
+    opacity: 0.1;
+}
+
+.button-match-confirm {
+    display: none;
+}
+
+.winner h2 {
+    font-size: 28px;
+    color: #FFFFFF;
+}
+
+.main-container .winConditions-button {
+    width: 320px;
+}
+.main-container .winConditions-button:hover {
+    width: 340px;
+}
+
+.winlose-message {
+    transition: 2.5s ease-out;
+}
+
+
+/* Responsive CSS */
+@media screen and (max-width: 1400px) {
+    .event-description {
+        padding: 0 0 6vh 0;
+    }
+
+    .results-message-2 {
+        padding: 0 0 6vh 0;
+    }
+
+    .main-container .event-button-1 {
+        width: 350px;
+    }
+
+    .main-container .event-button-1:hover {
+        width: 370px;
+    }
+
+    .main-container .event-button-2 {
+        width: 350px;
+    }
+
+    .main-container .event-button-2:hover {
+        width: 370px;
+    }
+
+    .spinner {
+        width: 18%;
+        opacity: 0.1;
+    }
+}
+
+
+
+  /* Animations CSS */
+  /* page fade in animation */
+@keyframes transitionIn {
+    from {
+        opacity: 0;
+        transform: rotateX(-10deg);
+    }
+    to {
+        opacity: 1;
+        transform: rotateX(0);
+    }
+}

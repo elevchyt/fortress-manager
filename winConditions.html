@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="styles.css">
+    <title>Fortress Manager Mini | Win Conditions</title>
+</head>
+<body>
+    <div class=main-title>
+        <h1>Fortress Manager Mini</h1>
+        <p>A minigame about managing a Team Fortress 2 team in an imaginary league.</p>
+    </div>
+
+    <div class="main-container">
+        <h2>Choose win conditions</h2>
+        <button onClick=setWinConditions(1) class="winConditions-button">First to 100 Points</button>
+        <button onClick=setWinConditions(2) class="winConditions-button">First to 2300 Ranking</button>
+        <button onClick=setWinConditions(3) class="winConditions-button">Infinite Game</button>
+    </div>
+
+    <footer>
+        <a href="https://github.com/elevchyt" target="_blank">github/elevchyt</a>
+    </footer>
+
+    <!-- JS -->
+    <script src="js/database.js"></script>
+    <script src="js/redirect.js"></script>
+    <script src="js/winConditions.js"></script>
+</body>
+</html>
