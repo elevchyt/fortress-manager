@@ -48,8 +48,8 @@ function roundWinnerCalculate() {
     let roundWinTeam
 
     // Decide round winner
-    let oddsBLU = teamsOnBLU[matchPlayerIndex].ranking + teamsOnBLU[matchPlayerIndex].overallTotal 
-    let oddsRED = teamsOnRED[matchPlayerIndex].ranking + teamsOnRED[matchPlayerIndex].overallTotal 
+    let oddsBLU = teamsOnBLU[matchPlayerIndex].ranking + (teamsOnBLU[matchPlayerIndex].overallTotal * 10)
+    let oddsRED = teamsOnRED[matchPlayerIndex].ranking + (teamsOnRED[matchPlayerIndex].overallTotal * 10)
     let totalOdds = oddsBLU + oddsRED
     let rollValue = Math.floor(Math.random() * (oddsBLU + oddsRED))
 
@@ -143,5 +143,5 @@ function roundTimeUntilNextCountdown() {
     setTimeout(
         function() {
             roundStartCountdown()
-        }, 3000);
+        }, 1000);
 }

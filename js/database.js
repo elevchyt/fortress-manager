@@ -143,6 +143,16 @@ let events = [
         "outcomeNeutral": "You call in sick, staying in bed all night while listening to uninteresting global warming podcasts.",
         "budgetGain": 120,
         "budgetLoss": 100
+    },
+    {
+        "description": "Your team is invited to participate to a brand new charity event named 'Save the orphans'. The event is hosted by some old league players. What do you do?",
+        "choiceOne": "Accept",
+        "choiceTwo": "Decline",
+        "outcomeGood": "The event turned out to be very successful to your team's reputation! As a result, a few sponsors chipped in after the event was over and donated $200 to your team's budget as a sign of appreciation for your participation!",
+        "outcomeBad": "You accept the invitation, only to find out that the invational e-mail was a scam that got you into paying an $80 participation fee!",
+        "outcomeNeutral": "You collect your thoughts and decide to maintain your team's practice routine.",
+        "budgetGain": 200,
+        "budgetLoss": 80
     }
 ]
 

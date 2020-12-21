@@ -62,7 +62,7 @@ function dexterityBuy() {
             redirectToResults()
         }
     } else {
-        alert("Your budget isn't high enough for this type of practice!")
+        alert("Your budget isn't high enough for this type of practice! ($" + dexterityCost + ")")
     }
 }
 
@@ -84,7 +84,7 @@ function reviewBuy() {
             redirectToResults()
         }
     } else {
-        alert("Your budget isn't high enough for this type of practice!")
+        alert("Your budget isn't high enough for this type of practice! ($" + reviewCost + ")")
     }
 }
 
@@ -106,7 +106,7 @@ function coachingBuy() {
             redirectToResults()
         }
     } else {
-        alert("Your budget isn't high enough for this type of practice!")
+        alert("Your budget isn't high enough for this type of practice! ($" + coachingCost + ")")
     }
 }
 
@@ -116,7 +116,7 @@ function dexterityPractice() {
     var i = 0
     for (i = 0; i < 6; i++) {
         // Skill Gain
-        skillGain[i] = Math.floor(Math.random() * 3)
+        skillGain[i] = Math.floor(Math.random() * 4)
 
         // Coop Loss
         coopLoss[i] = -Math.floor(Math.random() * 2)
@@ -141,7 +141,7 @@ function reviewPractice() {
     var i = 0
     for (i = 0; i < 6; i++) {
         // Coop Gain
-        coopGain[i] = Math.floor(Math.random() * 3)
+        coopGain[i] = Math.floor(Math.random() * 4)
 
         // Skill Loss
         skillLoss[i] = -Math.floor(Math.random() * 2)
@@ -166,7 +166,7 @@ function coachingPractice() {
     var i = 0
     for (i = 0; i < 6; i++) {
         // Coop Gain
-        coopGain[i] = Math.floor(Math.random() * 4)
+        coopGain[i] = Math.floor(Math.random() * 5)
 
         // Skill Loss
         skillLoss[i] = -Math.floor(Math.random() * 2)
