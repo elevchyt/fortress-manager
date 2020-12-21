@@ -20,3 +20,13 @@ rankingRosterHTML.innerHTML = teams[0].ranking
 
 let rankingBonusRosterHTML = document.querySelector('.ranking-bonus')
 rankingBonusRosterHTML.innerHTML = '(+' + teams[0].overallTotal + ')'
+
+let timesWonHTML = document.querySelector('.times-won')
+timesWonHTML.innerHTML = 'Times Won: ' + teams[0].timesWon
+
+let timesLostHTML = document.querySelector('.times-lost')
+timesLostHTML.innerHTML = 'Times Lost: ' + teams[0].timesLost
+
+let winLossRatioHTML = document.querySelector('.win-loss-ratio')
+let winLossRatio = (teams[0].timesWon + teams[0].timesLost) / 2
+winLossRatioHTML.innerHTML = 'W/L Ratio: ' + winLossRatio

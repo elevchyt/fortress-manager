@@ -13,9 +13,14 @@ teams[0].overallTotal = overallTotal
 localStorage.setItem('players', JSON.stringify(players))
 localStorage.setItem('teams', JSON.stringify(teams))
 
-// Set result-message based on whatDidYouDo
 if (whatDidYouDo == 'skip') {
+    let randomEarnings = Math.floor((Math.random() * 20) + 10)
+    teams[0].budget += randomEarnings
+
     resultsMessageHTML.innerHTML = 'You have skipped the day!'
+    resultsMessage2HTML.innerHTML = 'You have earned $' + randomEarnings + '.'
+
+    localStorage.setItem('teams',  JSON.stringify(teams))
 } 
 
 else if (whatDidYouDo == 'practiceDexterity') {
@@ -77,15 +82,18 @@ else if (whatDidYouDo == 'match') {
 
     // Stats change
     let rankingEarned = Math.floor((Math.random() * 25) + 50) // random between 25 & 50
+    let randomEarnings = Math.floor((Math.random() * 30) + 40) // random between 25 & 50
     teams[matchWinnerIndex].pointsCurrent += 6
     teams[matchWinnerIndex].ranking += rankingEarned
     teams[matchWinnerIndex].timesWon += 1
+    teams[matchWinnerIndex].budget += randomEarnings
     teams[matchLoserIndex].timesLost += 1
 
     resultsMessageHTML.innerHTML = 'You finished a match!'
     
     if (teams[matchWinnerIndex].playerTeam == true) {
         resultsMessage2HTML.innerHTML = '<br />' + 'You earned 6 points!' + '<br />Your ranking has increased by ' + rankingEarned + '!'
+        + '<br />You earned $' + randomEarnings + '!'
         
     } else {
         resultsMessage2HTML.innerHTML = '<br />' + 'Unfortunately, you were defeated.'
@@ -135,7 +143,7 @@ function rollEvent() {
     && localStorage.getItem('matchDay') == 0
     && localStorage.getItem('leaderboardPrizeDay') != parseInt(localStorage.getItem('dayCurrent'))) {
         // Roll for event
-        let rollEventNum = Math.floor(Math.random() * 6)
+        let rollEventNum = Math.floor(Math.random() * 4)
         if (rollEventNum == 1) {
             // Choose an event randomly and go to events.js
             localStorage.setItem('eventIndex', Math.floor(Math.random() * events.length))
