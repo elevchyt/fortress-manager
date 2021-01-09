@@ -1,4 +1,4 @@
-// Teams & Player's team players
+// Teams & Player's team players(overallTotal increases/decreases difficulty against AI - reduce on AI teams to make easier to beat)
 let teams = [
     {
         "id": 0,
@@ -20,7 +20,7 @@ let teams = [
         "budget": 300,
         "playerTeam": false,
         "place": 0,
-        "overallTotal": 30,
+        "overallTotal": 0,
         "timesWon": 0,
         "timesLost": 0
     },
@@ -32,7 +32,7 @@ let teams = [
         "budget": 300,
         "playerTeam": false,
         "place": 0,
-        "overallTotal": 30,
+        "overallTotal": 0,
         "timesWon": 0,
         "timesLost": 0
     },
@@ -44,7 +44,7 @@ let teams = [
         "budget": 300,
         "playerTeam": false,
         "place": 0,
-        "overallTotal": 30,
+        "overallTotal": 0,
         "timesWon": 0,
         "timesLost": 0
     },
@@ -56,7 +56,7 @@ let teams = [
         "budget": 300,
         "playerTeam": false,
         "place": 0,
-        "overallTotal": 30,
+        "overallTotal": 0,
         "timesWon": 0,
         "timesLost": 0
     },
@@ -68,7 +68,7 @@ let teams = [
         "budget": 300,
         "playerTeam": false,
         "place": 0,
-        "overallTotal": 30,
+        "overallTotal": 0,
         "timesWon": 0,
         "timesLost": 0
     }
@@ -153,6 +153,16 @@ let events = [
         "outcomeNeutral": "You collect your thoughts and decide to maintain your team's practice routine.",
         "budgetGain": 200,
         "budgetLoss": 80
+    },
+    {
+        "description": "There is a rocket jump LAN tournament happening and one of your team's soldiers has been invited. However, he needs $30 for a plane ticket, and asks if you can give it to him - as he is representing the team. What do you do?",
+        "choiceOne": "Accept",
+        "choiceTwo": "Decline",
+        "outcomeGood": "Your team's player manages to finish 2nd in the tournament and won $140, which he decides to donate to the team's budget!",
+        "outcomeBad": "Many rocket jumps later, your team's player finished close to last... He is going to need another $30 to fly back home and as a result you lose a total of $60...",
+        "outcomeNeutral": "You collect your thoughts and decide to maintain your team's practice routine.",
+        "budgetGain": 140,
+        "budgetLoss": 60
     }
 ]
 

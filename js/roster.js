@@ -28,5 +28,13 @@ let timesLostHTML = document.querySelector('.times-lost')
 timesLostHTML.innerHTML = 'Times Lost: ' + teams[0].timesLost
 
 let winLossRatioHTML = document.querySelector('.win-loss-ratio')
-let winLossRatio = (teams[0].timesWon + teams[0].timesLost) / 2
-winLossRatioHTML.innerHTML = 'W/L Ratio: ' + winLossRatio
+let winLossRatio = teams[0].timesWon / teams[0].timesLost
+
+// Avoid impossible divisions
+if (teams[0].timesLost == 0 && teams[0].timesWon != 0) {
+    winLossRatioHTML.innerHTML = 'W/L Ratio: ' + teams[0].timesWon.toFixed(1)
+} else if (teams[0].timesLost != 0 && teams[0].timesWon == 0) {
+    winLossRatioHTML.innerHTML = 'W/L Ratio: ' + teams[0].timesLost.toFixed(1)
+} else {
+    winLossRatioHTML.innerHTML = 'W/L Ratio: ' + winLossRatio.toFixed(1)
+}
